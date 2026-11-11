@@ -1,29 +1,70 @@
 ﻿int numero = 0;
-Console.WriteLine("---------Primo---------");
-Console.WriteLine("-----------------------");
-Console.WriteLine("Digite um número qualquer inteiro:");
-numero = int.Parse(Console.ReadLine());
-if (numero < 2)
-{
-    Console.WriteLine("Nenhum número primo!");
-}
-else
-{
-    for(int i = 2; i <= numero; i++)
-    {
-        bool ehPrimo = true;
 
-        for(int j = 2; j * j <= i; j++)
+bool EPrimo(int numero)
+{
+    if (numero <= 1)
+    {
+        return false;
+    }
+    int contador = 0;
+    for (int i = 1; i <= numero; i++)
+    {
+        if (numero % i == 0)
         {
-            if (i % j == 0)
-            {
-                ehPrimo = false;
-                break;
-            }
+            contador++;
         }
-        if (ehPrimo)
+    }
+    if (contador > 2)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+void LeitorNumero(int numero)
+{
+    for (int i = 2; i <= numero; i++)
+    {
+        if (EPrimo(i))
         {
             Console.WriteLine(i);
         }
     }
+
 }
+
+Console.WriteLine("Informe o número desejeado");
+numero = int.Parse(Console.ReadLine());
+LeitorNumero(numero);
+
+
+/////////////////////////////////
+
+
+//void Primo(int numero)
+//{
+//    for (int i = 2; i <= numero; i++)
+//    {
+//        int contador = 0;
+//        for (int j = i; j >= 2; j--)
+//        {
+//            if (i % j == 0)
+//            {
+//                contador++;
+//            }
+//            if (contador > 1)
+//            {
+//                break;
+//            }
+//        }
+
+//        if (contador <= 1)
+//        {
+//            Console.WriteLine(i);
+//        }
+//    }
+//}
+//Console.WriteLine("Informe o número desejeado");
+//Primo(int.Parse(Console.ReadLine()));
