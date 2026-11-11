@@ -7,15 +7,23 @@ if (numero < 2)
 {
     Console.WriteLine("Nenhum número primo!");
 }
-
-for (int i = 0; i <= numero; i++)
+else
 {
-    if (i == 1 || i % 2 == 0 && i != 2 || i % 3 == 0 && i != 3 || i % 4 == 0 && i != 4 || i % 5 == 0 && i != 5 || i % 6 == 0 && i != 6 || i % 7 == 0 && i != 7)
+    for(int i = 2; i <= numero; i++)
     {
-        //
-    }
-    else
-    {
-        Console.WriteLine(i);
+        bool ehPrimo = true;
+
+        for(int j = 2; j * j <= i; j++)
+        {
+            if (i % j == 0)
+            {
+                ehPrimo = false;
+                break;
+            }
+        }
+        if (ehPrimo)
+        {
+            Console.WriteLine(i);
+        }
     }
 }
