@@ -1,4 +1,9 @@
-﻿int numero = 0;
+﻿// 4) Numeros primos
+// Faca um programa que leia um numero inteiro
+// e mostre todos os numeros primos ate ele,
+// inclusive ele mesmo.
+
+int numero = 0;
 
 bool EPrimo(int numero)
 {
@@ -35,7 +40,7 @@ void LeitorNumero(int numero)
 
 }
 
-Console.WriteLine("Informe o número desejeado");
+Console.WriteLine("Informe o número desejeado:");
 numero = int.Parse(Console.ReadLine());
 LeitorNumero(numero);
 
@@ -68,3 +73,6 @@ LeitorNumero(numero);
 //}
 //Console.WriteLine("Informe o número desejeado");
 //Primo(int.Parse(Console.ReadLine()));
+
+
+

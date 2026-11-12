@@ -1,4 +1,10 @@
-﻿int numero = 0;
+﻿// 3) Impares e pares
+// Faca um programa que leia um numero inteiro
+// e mostre primeiramente so os valores impares
+// em ordem crescente e depois os pares em
+// ordem decrescente.
+
+int numero = 0;
 Console.WriteLine("---------Ímpar Par---------");
 Console.WriteLine("-------------------------");
 Console.WriteLine("Digite um número qualquer inteiro:");

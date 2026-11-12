@@ -1,4 +1,8 @@
-﻿int numero = 0;
+﻿// 1) Tabuada
+// Faca um programa que leia um numero inteiro
+// e mostre a tabuada de 1 a 10.
+
+int numero = 0;
 int tabuada = 0;
 
 Console.WriteLine("---------Tabuada---------");

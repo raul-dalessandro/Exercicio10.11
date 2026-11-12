@@ -1,4 +1,8 @@
-﻿int n1 = 0;
+﻿// 5) Fatorial
+// Faca um programa que leia um numero inteiro
+// e exiba seu calculo fatorial e seu resultado.
+
+int n1 = 0;
 long fatorial = 1;
 
 Console.WriteLine("---------Fatorial---------");
@@ -11,4 +15,5 @@ for (int i = 1; i <= n1 ; i++)
     fatorial = fatorial * i;
     Console.WriteLine($"{n1}! = {fatorial}");
 }
+
 
