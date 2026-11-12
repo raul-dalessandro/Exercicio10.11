@@ -1,9 +1,25 @@
-1-Faça um programa que leia um número inteiro e mostre a tabuada de 1 a 10.
+# Laços de repetição
 
-2-Faça um programa que leia um número inteiro, esse número é a posição até onde a sequência fibonacci será exibida.
- 
-3-Faça um programa que leia um número inteiro e mostre primeiramente só os valores ímpares na ordem crescente e depois os pares na decrescente.
+1) Tabuada
+Faça um programa que leia um número inteiro
+e mostre a tabuada de 1 a 10.
 
-4-Faça um programa que leia um número inteiro e mostre todos os números primos até ele,inclusive ele mesmo.
+2) Fibonacci
+Faça um programa que leia um número inteiro.
+Esse número é a posição até onde a sequência
+de Fibonacci será exibida.
 
-5-Faça um programa que leia um número inteiro,exiba seu cálculo fatorial e seu resultado.
+3) Ímpares e pares
+Faça um programa que leia um número inteiro
+e mostre primeiramente só os valores ímpares
+em ordem crescente e depois os pares em
+ordem decrescente.
+
+4) Números primos
+Faça um programa que leia um número inteiro
+e mostre todos os números primos até ele,
+inclusive ele mesmo.
+
+5) Fatorial
+Faça um programa que leia um número inteiro
+e exiba seu cálculo fatorial e seu resultado.
